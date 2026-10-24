@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estructura básica de una página HTML</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mi Página Web</h1>
+    <p>Ejemplo de estructura HTML: encabezado, foto, contenido y pie de página</p>
+    <button id="btnTema" type="button">Cambiar tema</button>
+  </header>
+
+  <section class="foto">
+    <figure>
+      <img src="img/icono-html.png" alt="Ícono 3D de archivo HTML">
+      <figcaption>Ícono 3D de un archivo HTML</figcaption>
+    </figure>
+  </section>
+
+  <main>
+    <h2>Contenido principal</h2>
+    <p>
+      Este es el bloque de contenido de la página. Aquí puedes escribir el texto
+      principal, explicaciones, artículos o cualquier información que quieras mostrar
+      al usuario.
+    </p>
+    <p>
+      La etiqueta <code>&lt;main&gt;</code> se utiliza para agrupar el contenido central
+      y único de un documento HTML, diferenciándolo del encabezado, el menú y el pie de página.
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mi Página Web. Todos los derechos reservados.</p>
+    <p id="info">Ancho de la ventana: <span id="ancho"></span> px</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

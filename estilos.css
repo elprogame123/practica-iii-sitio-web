@@ -1,0 +1,190 @@
+/* ==========================================================
+   Hoja de estilos: Estructura básica de una página HTML
+   Archivo: css/estilos.css
+   ========================================================== */
+
+/* ---------- Reinicio general ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Cuerpo de la página ---------- */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.7;
+}
+
+/* ---------- Encabezado ---------- */
+header {
+  background-color: #161b22;
+  color: #58a6ff;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #30363d;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header h1::before {
+  content: "</> ";
+}
+
+header p {
+  color: #8b949e;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ---------- Sección de la foto ---------- */
+.foto {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: #010409;
+}
+
+.foto figure {
+  text-align: center;
+  background-color: #161b22;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+}
+
+.foto img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.foto figcaption {
+  margin-top: 0.6rem;
+  color: #8b949e;
+  font-size: 0.85rem;
+}
+
+/* ---------- Contenido principal ---------- */
+main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+main h2 {
+  color: #58a6ff;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+main h2::before {
+  content: "// ";
+  color: #8b949e;
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+
+main code {
+  background-color: #161b22;
+  color: #ffa657;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+/* ---------- Pie de página ---------- */
+footer {
+  background-color: #161b22;
+  color: #8b949e;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  border-top: 2px solid #30363d;
+  font-size: 0.85rem;
+}
+
+/* ==========================================================
+   Estilos para los eventos de js/script.js
+   ========================================================== */
+
+/* Botón del evento click */
+#btnTema {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #58a6ff;
+  background-color: #0d1117;
+  border: 1px solid #58a6ff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btnTema:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
+
+/* Eventos mouseover / mouseout sobre la imagen */
+.foto img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.foto img.resaltada {
+  transform: scale(1.15);
+  box-shadow: 0 0 20px #58a6ff;
+}
+
+/* Evento dblclick sobre el título */
+header h1 {
+  cursor: pointer;
+}
+
+header h1.titulo-alterno {
+  color: #ffa657;
+}
+
+/* Tema claro (evento click) */
+body.tema-claro {
+  background-color: #f6f8fa;
+  color: #24292f;
+}
+
+body.tema-claro header,
+body.tema-claro footer,
+body.tema-claro .foto figure,
+body.tema-claro main code {
+  background-color: #ffffff;
+}
+
+body.tema-claro .foto {
+  background-color: #eaeef2;
+}
+
+body.tema-claro header,
+body.tema-claro footer,
+body.tema-claro .foto figure {
+  border-color: #d0d7de;
+}
+
+body.tema-claro header h1,
+body.tema-claro main h2 {
+  color: #0969da;
+}
+
+body.tema-claro header h1.titulo-alterno {
+  color: #bc4c00;
+}
+
+body.tema-claro #btnTema {
+  background-color: #ffffff;
+  color: #0969da;
+  border-color: #0969da;
+}
